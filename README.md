@@ -1,6 +1,6 @@
 # How can Javascript improve your CSS Mixins
 
-## [Slides presented at JSConf Budapest](https://docs.google.com/presentation/d/19v8jkgS_0F7DrGw-8SzHktzy7nkC9W9XCNDqeXzB2wg/edit?usp=sharing)
+## [Slides from Talk at JSConf Budapest](https://docs.google.com/presentation/d/19v8jkgS_0F7DrGw-8SzHktzy7nkC9W9XCNDqeXzB2wg/edit?usp=sharing)
 
 This repo is an extension of the original talk where I share more examples about CSS Mixins.
 
