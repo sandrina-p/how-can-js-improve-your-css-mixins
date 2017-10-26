@@ -1,0 +1,128 @@
+* { box-sizing: border-box; }
+
+:root {
+    --clrBg: #111;
+    --clrText: #f0f0f0;
+    --clrPrimary: #f0df00;
+    --clrLink: tomato;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background-color: var(--clrBg);
+    color: var(--clrText);
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 6.5vw;
+    line-height: 1.2;
+
+    strong {
+        color: var(--clrPrimary);
+    }
+}
+
+.section {
+    color: var(--clrPrimary);
+    margin-top: 2rem;
+    font-weight: 400;
+}
+
+.list {
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+.item {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.link {
+    display: block;
+    color: #eee;
+    background-color: #222;
+    border: 1px solid #eee;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0;
+    transition: transform 150ms, box-shadow 150ms;
+
+    &:hover {
+        transform: translate(-3px, -3px);
+    }
+}
+
+.linkRef {
+    color: inherit;
+    &:hover {
+        color: var(--clrLink);
+    }
+}
+
+/* ----- ICON EXAMPLE ----- */
+/* list of .icon--xx with its colors */
+@mixin socialIconList;
+
+
+/* ----- SPRITE EXAMPLE ----- */
+/* list of .flag--xx with its bg position */
+@mixin sprite flag;
+
+
+
+/* ----- OTHER EXAMPLES ----- */
+
+/* Mixin vs PostCSS Plugin */
+
+.foo-size-mixin {
+    color: purple;
+    @mixin size 25px;
+    border: 1px solid black;
+}
+
+.foo-size-postcss-plugin {
+    color: purple;
+    size: 25px 15px; /* postcss-short-size */
+    border: 1px solid black;
+}
+
+
+/* Mixin with Content */
+
+@define-mixin isIOS {
+    .isIOS & {
+        @mixin-content;
+    }
+}
+
+.foo-isIOS-mixin {
+    color: blue;
+
+    @mixin isIOS {
+        color: red;
+    }
+
+    /* check src/mixins */
+    @mixin isIE {
+        color: green;
+    }
+}
+
+/* Output:
+    .foo-isIOS-mixin { color: blue; }
+    .isIOS .foo-isIOS-mixin { color: red; }
+    .isIE .foo-isIOS-mixin { color: green; }
+ */

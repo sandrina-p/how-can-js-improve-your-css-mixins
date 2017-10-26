@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sprite @mixin should return all sprite modifiers 1`] = `
+Object {
+  ".flag": Object {
+    "background-image": "url(./media/sprites/flag.png)",
+    "display": "inline-block",
+    "height": 37,
+    "width": 72,
+  },
+  ".flag--br": Object {
+    "background-position": "-162px -92px",
+  },
+  ".flag--ca": Object {
+    "background-position": "-243px 0px",
+  },
+  ".flag--cn": Object {
+    "background-position": "-81px -92px",
+  },
+  ".flag--de": Object {
+    "background-position": "-162px 0px",
+  },
+  ".flag--dk": Object {
+    "background-position": "-405px -46px",
+  },
+  ".flag--es": Object {
+    "background-position": "0px -46px",
+  },
+  ".flag--fi": Object {
+    "background-position": "-324px -46px",
+  },
+  ".flag--fr": Object {
+    "background-position": "-405px 0px",
+  },
+  ".flag--gb": Object {
+    "background-position": "0px 0px",
+  },
+  ".flag--gr": Object {
+    "background-position": "-567px -46px",
+  },
+  ".flag--hu": Object {
+    "background-position": "-243px -92px",
+  },
+  ".flag--ie": Object {
+    "background-position": "0px -92px",
+  },
+  ".flag--it": Object {
+    "background-position": "-567px 0px",
+  },
+  ".flag--lu": Object {
+    "background-position": "-162px -46px",
+  },
+  ".flag--pl": Object {
+    "background-position": "-324px 0px",
+  },
+  ".flag--pt": Object {
+    "background-position": "-81px -46px",
+  },
+  ".flag--ru": Object {
+    "background-position": "-486px 0px",
+  },
+  ".flag--se": Object {
+    "background-position": "-486px -46px",
+  },
+  ".flag--sj": Object {
+    "background-position": "-243px -46px",
+  },
+  ".flag--us": Object {
+    "background-position": "-81px 0px",
+  },
+}
+`;
